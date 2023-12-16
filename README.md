@@ -7,103 +7,103 @@
 
 <style>
 body{
-  background:#c0c0c0; /* Меняется фон экрана, выбирается здесь */
+  background:#c0c0c0; 
 }
 
-#wrapper{ /* Оболочка страницы сайта */
-  width: 900px; /* Меняется ширина страницы */
+#wrapper{ 
+  width: 900px; 
   margin: 0 auto;
-  background:#f2e8c9; /* Меняется задний фон страницы */
+  background:#f2e8c9; 
 }
 
-/* Шапка сайта */
+
 
 #header{
-position:relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
-  height: 250px; /* Высота шапки */
-  background-color: #ffffff; /* Фон шапки */
-   margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
-  border-radius: 5px; /* Закругляются углы блока */
-  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+position:relative; 
+  height: 250px; 
+  background-color: #ffffff; 
+   margin-bottom: 5px;
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
 }
 img{ 
 float: left;
-  margin: -40px 0 0 0;} /* Размещаем картинку в блоке header. 1-я и 3-я цифры - двигаем вверх-вниз, 2-я и 4-я цифры - двигаем вправо-влево */
-h1{ /* Заголовок сайта */
-  margin:0 0 10px 40px; /* Заголовок двигается верх-вправо-вниз-влево. */
-  color:#464451; /* Цвет заголовка */
+  margin: -40px 0 0 0;} 
+h1{ 
+  margin:0 0 10px 40px; 
+  color:#464451;
 }
-.nomer{ /*Подзаголовок (номер телефона)*/
-  position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
-  top:5px; /* Двигается вверх-вниз */
-  left:680px; /* Двигается вправо-влево */
-  font-size: 25px; /* Размер букв подзаголовка */
-  font-style:italic; /* Курсив */
-  font-weight:bold; /* Жирный */
-  color:#464451; /* Цвет букв подзаголовка */
-}
-
-
-
-#sidebar{ /* Блок сайдбара */
-  background-color: #ffffff; /* Фон блока */
-  width: 180px; /* Ширина блока */
-  padding: 10px; /* Отступ текста от краёв */
-  float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
-  border-radius: 5px; /* Закругляем углы блока */
-  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
-}
-.marcer{ /* Галочки маркеры меню */
-  float: left; /* Размещаем слева от текста */
-  margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+.nomer{ 
+  position:absolute; 
+  top:5px; 
+  left:680px; 
+  font-size: 25px; 
+  font-style:italic;
+  font-weight:bold; 
+  color:#464451; 
 }
 
 
 
-#content{ /* Блок контента */
-  margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
-  width: 676px; /* Ширина статьи */
-  padding: 10px; /* Отступ текста от краёв блока */
-  background: #ffffff; /* Фон статьи */
+#sidebar{
+  background-color: #ffffff; 
+  width: 180px;
+  padding: 10px; 
+  float: right; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+.marcer{ 
+  float: left; 
+  margin: 5px 5px 0 0;
+}
+
+
+
+#content{
+  margin-bottom: 5px; 
+  width: 676px; 
+  padding: 10px; 
+  background: #ffffff; 
   border-radius: 5px;
   box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
 }
-.left{ /* Картинка в тексте слева */
+.left{ 
   float: left;
   margin: 30px 7px 7px 7px;
 }
-.right{ /* Картинка в тексте справа */
+.right{ 
   float: right;
   margin: 7px 0 7px 7px;
 }
 
 
-#footer{ /* Блок подвала */
-  height:80px; /* Высота блока подвала */
-  background-color: #ffffff; /* Фон блока подвала */
-  margin-bottom: 10px; /* Отступ снизу */
-  border-radius: 5px; /* Закруглённые углы */
-  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+#footer{
+  height:80px; 
+  background-color: #ffffff; 
+  margin-bottom: 10px;
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
 }
-.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+.clear{ 
   clear: both;
 }
-  .fon{ /* Номер телефона */
-  float:left; /* Разрешаем другим элементам обтекать абзац справа */
+  .fon{ 
+  float:left; 
   margin:20px 0 0 20px;
 }
-.fax{ /* Номер факса */
+.fax{ 
   float:left;
   margin:20px 0 0 60px;
 }
-.mail{ /* Адрес E-mail */
+.mail{ 
   float:left;
  margin:20px 0 0 60px;
 }
 </style>
 </head>
 <body>
-  <div id="wrapper"> <!--Оболочка страницы-->
+  <div id="wrapper">
 
     <div id="header">
 
@@ -148,7 +148,7 @@ h1{ /* Заголовок сайта */
 нюансы, они отнимали больше всего времени. И я решил
 написать свой материал, так что-бы другим было легче
 сориентироваться в потоке новой информации.</p>
-<!--Картинка справа-->
+
       <img class="right" src="http://trueimages.ru/img/0d/64/07a18f15.png">
 
 <p>Здесь
@@ -161,9 +161,9 @@ h1{ /* Заголовок сайта */
 <p>Уверен, у Вас получится еще лучше и уж точно, в
 несколько раз быстрее, чем у меня.</p>
     </div>
-<!--Запрет наплывания-->
+
   <div class="clear"></div>
-<!--Подвал-->
+
     <div id="footer">
       <p class="fon"><strong>Телефон:<br> 265-48-76</strong> </p>
       <p class="fax"><strong>Факс:<br> 265-85-97</strong></p>
