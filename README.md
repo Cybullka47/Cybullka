@@ -165,9 +165,9 @@ h1{
   <div class="clear"></div>
 
     <div id="footer">
-      <p class="fon"><strong>Телефон:<br> 265-48-76</strong> </p>
-      <p class="fax"><strong>Факс:<br> 265-85-97</strong></p>
-      <p class="mail"><strong>E-mail<br>ctoto@mail.ru</strong></p>
+      <p class="fon"><strong>Телефон:<br> 275-48-86</strong> </p>
+      <p class="fax"><strong>Факс:<br> 237-82-97</strong></p>
+      <p class="mail"><strong>E-mail<br>cybulka47@mail.ru</strong></p>
 
     </div>
   </div>
