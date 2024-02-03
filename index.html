@@ -221,6 +221,85 @@ a:hover #img4, a:focus #img4  {
   </div>
 <a href="https://msiter.ru/references/html5-canvas/stroketext">Сайт помощник</a>
 <a href="https://https://jsitor.com">Мой сайт</a>      
+     <p style="text-align: center">
+
+	<button>Покорми меня!</button>
+	<p>А здесь еды нет</p>
+
+	<style>
+		body {
+			height: 200px;
+			background: wight;
+		}
+
+		.dot {
+			height: 8px;
+			width: 8px;
+			border-radius: 4px;
+			/* скруглённые углы */
+			background: blue;
+			position: absolute;
+		}
+	</style>
+	<img id="myImg" src="https://gas-kvas.com/uploads/posts/2023-01/1673339139_gas-kvas-com-p-anime-risunki-inoske-23.jpg" style="position: relative" weight="500" height="200">
+	<script>
+		var cat = document.getElementById('myImg');
+var angle = 0, lastTime = null;
+function animate(time) {
+if (lastTime != null)
+angle += (time - lastTime) * 0.001;
+lastTime = time;
+cat.style.top = (Math.sin(angle) * 100) + "px";
+cat.style.left = (Math.cos(angle) * 200) + "px";
+requestAnimationFrame(animate);
+}
+
+
+var button = document.querySelector("button");
+button.addEventListener("click", function() {
+alert("Маловато будет!");
+});
+
+document.getElementById('myImg').onclick = myFunction;
+
+function myFunction() {
+  alert('Ouch!!!');
+}
+
+
+requestAnimationFrame(animate);
+
+	</script>
+	<img id="myIml" src="https://segaretro.org/images/9/98/DemonSlayer_Inosuke.png" style="position: relative" weight="500" height="200">
+<script>
+	var cat = document.getElementById('myIml');
+var angle = 0, lastTime = null;
+function animate(time) {
+if (lastTime != null)
+angle += (time - lastTime) * 0.001;
+lastTime = time;
+cat.style.top = (Math.sin(angle) * 100) + "px";
+cat.style.left = (Math.cos(angle) * 200) + "px";
+requestAnimationFrame(animate);
+}
+
+
+var button = document.querySelector("button");
+button.addEventListener("click", function() {
+alert("Маловато будет!");
+});
+
+document.getElementById('myIml').onclick = myFunction;
+
+function myFunction() {
+  alert('Ouch!!!');
+}
+
+
+requestAnimationFrame(animate);
+
+</script>
+
       </body>
 </html>
     transform: rotate(45deg);
